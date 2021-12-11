@@ -1,3 +1,5 @@
 const st = require('./students')
-st.studentName('Sachin')
-st.studentage(52)
+console.log(st);
+st.myAge(25);
+st.myName('Souvik');
+st.mySchool('Coding');

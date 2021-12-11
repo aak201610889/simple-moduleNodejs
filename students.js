@@ -1,8 +1,5 @@
-const studentName = (name) => {
-  console.log('name of the student is '+name);
-}
-const studentAge = (age) => {
-  console.log('age of the student'+age);
-}
-module.exports.studentName = studentName;
-module.exports.studentage = studentAge;
+const myName = (name) => {console.log('my name is '+name); }
+const myAge = (age) => {console.log('my age is '+age); }
+const mySchool = (school) => { console.log('my school is ' + school); }
+
+module.exports = {myName, myAge, mySchool};
