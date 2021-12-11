@@ -37,5 +37,11 @@ const server = http.createServer((req, res) => {
     res.end();
 }
 );
-
 server.listen(8070);
+//--------event--------
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+emitter.on('messageLogged', (arg) => {
+    console.log('Listener called', arg);
+});
+emitter.emit('messageLogged', { id: 1, url: 'http://' });
